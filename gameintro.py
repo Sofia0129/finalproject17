@@ -49,11 +49,11 @@ def option_search1():
     choice = input(">>> ")
     if choice in answer_1:
         option_sneak()
-    elif choice in answer_B:
+    elif choice in answer_2:
         print ("\nYou decided to ski over Cobra's Trail again, but"
         "while searching you got a bit too close to the edge and fell"
         "300 feet!  \n\nYou died!")
-    elif choice in answer_C:
+    elif choice in answer_3:
         option_search2()
     else:
         print (required)
@@ -80,7 +80,7 @@ def option_search2():
         "Did you know that Yetis have a keen sense of smell?  WELP..."
         "They do, so...\n\nYou died!")
     elif choice in answer_2:
-        if sword > 0:
+        if ice_pick > 0:
             print ("\nYou took shelter behind the nearby snowbank. The shimmering ice pick"
             "attracted the Yeti, who was certain that you would be his dinner."
             "He crept closer and closer, and your palms became sweaty in your gloves."
@@ -98,6 +98,27 @@ def option_search2():
     else:
         print (required)
         option_search2()
+
+def option_run():
+    print ("\nYou kick off your skis and run as fast as you can"
+    "You're unable to run in your ski boots, and the Yeti is"
+    "gaining speed. You decide to...")
+    time.sleep(1)
+    print ("""  1. Hide behind boulder
+    2. Fight the Yeti
+    3. Run towards the lodge and hope you make it there safe""")
+    choice = input(">>> ")
+    if choice in answer_1:
+        print ("The Yeti was able to spot you easily. "
+        "\n\nYou died!")
+    elif choice in answer_2:
+        print ("\nYou're no match for the massive Yeti. "
+        "\n\nYou died!")
+    elif choice in answer_3:
+        option_lodge()
+    else:
+        print (required)
+        option_run()
 
 
 
