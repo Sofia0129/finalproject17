@@ -38,6 +38,66 @@ def intro():
         print (required)
         intro()
 
+def option_search1():
+    print ("\nYou ski slightly uphill over to Cobra's Persuit."
+    "You ski down the trail, but you can't seem to find your ticket.  Would you"
+    "like to...")
+    time.sleep(1)
+    print ("""  1. Give up and resort to sneaking past the lift attendant
+    2. Do another sweep over Cobra's Persuit
+    3. Search the Bunny Hill, where you warmed up this morning""")
+    choice = input(">>> ")
+    if choice in answer_1:
+        option_sneak()
+    elif choice in answer_B:
+        print ("\nYou decided to ski over Cobra's Trail again, but"
+        "while searching you got a bit too close to the edge and fell"
+        "300 feet!  \n\nYou died!")
+    elif choice in answer_C:
+        option_search2()
+    else:
+        print (required)
+        option_search1()
+
+def option_search2():
+    print ("\nYou ski down to the bunny hill, but you ear a loud grumble"
+    "coming from behind you.  It's a Yeti!!!!!!  Luckily, you notice an ice"
+    "pick on the ground. Do you pick it up. Y/N?")
+    choice = input(">>> ")
+    if choice in yes:
+        #the player has the ice pick
+        ice_pick = 1
+    else:
+        ice_pick = 0
+    print ("\nWhat do you do next?")
+    time.sleep(1)
+    print ("""  1. Hide behind a snowbank
+    2. Fight Yeti
+    3. Run""")
+    choice = input(">>> ")
+    if choice in answer_1:
+        print ("\nReally? You're going to hide behind a measley pile of snow?"
+        "Did you know that Yetis have a keen sense of smell?  WELP..."
+        "They do, so...\n\nYou died!")
+    elif choice in answer_2:
+        if sword > 0:
+            print ("\nYou took shelter behind the nearby snowbank. The shimmering ice pick"
+            "attracted the Yeti, who was certain that you would be his dinner."
+            "He crept closer and closer, and your palms became sweaty in your gloves."
+            "The Yeti tried to reach out to grab your ice pick, but you were too quick for him!"
+            "You stabbed his furry chest as he stumbled into the snow.\n\nYou survived!")
+        else:
+            #If the player doesn't have the pick
+            print ("\nNot picking up the ice pick was a terrible move."
+            "You now have no way to fight off the vicious Yeti.\n\nYou died!")
+    elif choice in answer_3:
+        print ("While the Yeti is distracted by other prey on the Bunny Hill,"
+        "you slip away into the brush. You're several feet into the woods, but the Yeti turns "
+        "around and sees you running.")
+        option_run()
+    else:
+        print (required)
+        option_search2()
 
 
 
