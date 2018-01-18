@@ -28,12 +28,12 @@ def intro():
     3. Ski across to Cobra's Persuit, the trail that you just came from""")
     choice = input(">>> ") #Here is your first choice.
     if choice in answer_1:
-        option_search1()
+        option_sneak()
     elif choice in answer_2:
         print ("\nWomp womp womp. The cold is not for the weak-hearted"
         "\n\nYou died!")
     elif choice in answer_3:
-        option_sneak()
+        option_search1()
     else:
         print (required)
         intro()
@@ -58,6 +58,29 @@ def option_search1():
     else:
         print (required)
         option_search1()
+
+def option_sneak():
+    print("You get into the crowded line of eager skiiers waiting to board the"
+    "high speed lift to the top. The left attendant is checking the tickets of"
+    "each skiier.  You try to keep your head down and slide by, but the attendant"
+    "notices that you don't have your ticket clipped to your jacket."
+    "What do you do next?"
+    time.sleep(1)
+    print(""" 1. Obey the rules and respectfully step out of line
+    2. Throw up a peace sign and hop on the lift anyway
+    3. Get trampled by the lift attendant """)
+    if choice in answer_1:
+        print("Following the rules will get you nowhere.\n\nYou died!")
+    elif choice in answer_2:
+        print("Risky move, but I like your style! Congrats, you're on your way"
+        "to the top.")
+        option_top()
+    elif choice in answer_3:
+        print("Your stupidity will get you killed.  You've been trampled by"
+        "the Yeti. \n\n You died!")
+    else:
+        print(required)
+        option_sneak
 
 def option_search2():
     print ("\nYou ski down to the bunny hill, but you ear a loud grumble"
