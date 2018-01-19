@@ -8,7 +8,7 @@ answer_3 = "3"
 yes = ["Y", "y", "yes"]
 no = ["N", "n", "no"]
 
-#Grabbing objects
+#objects to pick up along the way
 ice_pick = 0
 ticket = 0
 
@@ -17,12 +17,14 @@ required = ("\nOnly use 1, 2, or 3\n")
 
 #start with introduction section of game
 def intro():
+    #will set the scene
     print ("You're on Frozen Python Mountain! After a gnarley morning"
     "on the slopes, you find yourself about half way up the mountain."
     "You've always wanted to take the high-speed lift to the top of the"
     "mountain, but OH NO it seems that you have lost your lift ticket!"
     "You need it to continue your ski trip, so you decide to...")
     time.sleep(1)
+    #options for what to do about missing lift ticket
     print("""  1. Try to slide past the lift attendant
     2. Sit down in the snow and cry
     3. Ski across to Cobra's Persuit, the trail that you just came from""")
@@ -167,6 +169,9 @@ def option_town():
         print ("\nMaybe you should have picked up the ice pick. "
         "You're defenseless against the ruthless Yeti.\n\nYou died!")
 
+def option_top():
+    print("CONGRATULATIONS!!!!! YOU'VE MADE IT TO THE TOP! YOU MANAGED TO GET"
+    "PAST THE YETI AND REACH THE SUMMIT OF FROZEN PYTHON MOUNTAIN!!!\n\n YOU WIN")
 
 intro()
 
