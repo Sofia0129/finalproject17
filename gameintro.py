@@ -67,6 +67,7 @@ def option_sneak():
     "each skiier.  You try to keep your head down and slide by, but the attendant"
     "notices that you don't have your ticket clipped to your jacket."
     "What do you do next?"
+
     time.sleep(1)
     print(""" 1. Obey the rules and respectfully step out of line
     2. Throw up a peace sign and hop on the lift anyway
