@@ -10,7 +10,7 @@ no = ["N", "n", "no"]
 
 #Grabbing objects
 ice_pick = 0
-flower = 0
+ticket = 0
 
 required = ("\nOnly use 1, 2, or 3\n")
 #makes sure desired result is received
@@ -80,7 +80,7 @@ def option_sneak():
         "the Yeti. \n\n You died!")
     else:
         print(required)
-        option_sneak
+        option_sneak()
 
 def option_search2():
     print ("\nYou ski down to the bunny hill, but you ear a loud grumble"
@@ -142,6 +142,33 @@ def option_run():
     else:
         print (required)
         option_run()
+
+def option_town():
+    print ("\nWhile running, you notice a rusted "
+    "ice pick in the snow. You try to pick it up while passing"
+    "it, but you miss. You decide to hide behind"
+    "the main ski lodge building, knowing that the Yeti is not far behind."
+    "You spot a LIFT TICKET in the snow near your foot."
+    "Do you pick it up? Y/N")
+    choice = input(">>> ")
+    if choice in yes:
+        ticket = 1 #adds a ticket
+    else:
+        ticket = 0
+    print ("You hear its heavy footsteps and you prepare yourself to be"
+    "confronted by the massive Yeti")
+    time.sleep(1)
+    if ticket > 0:
+        print ("\nNow that you have a valid ticket, you can ride the lift"
+        "to the top of the mountain! You ski over to the lift as fast can,"
+        "leaving the Yeti far behind.")
+        option_top()
+    else: #If player didn't take the ice pick
+        print ("\nMaybe you should have picked up the ice pick. "
+        "You're defenseless against the ruthless Yeti.\n\nYou died!")
+
+
+intro()
 
 
 
