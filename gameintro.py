@@ -33,7 +33,8 @@ def check():
         lifts on the mountain.  What are you going to do next???""")
         time.sleep(7)
         #options for what to do about missing lift ticket
-        print("""1. Try to slide past the lift attendant
+        print("""
+        1. Try to slide past the lift attendant
         2. Sit down in the snow and cry
         3. Ski across to Cobra's Persuit, the trail that you just came from""")
         choice = input(">>> ") #Here is your first choice.
@@ -56,7 +57,8 @@ def option_search1():
     the trail, but you can't seem to find your ticket.  Would you
     like to...""")
     time.sleep(4)
-    print ("""1. Give up and resort to sneaking past the lift attendant
+    print ("""
+    1. Give up and resort to sneaking past the lift attendant
     2. Do another sweep over Cobra's Persuit
     3. Search the Bunny Hill, where you warmed up this morning""")
     choice = input(">>> ")
@@ -79,7 +81,8 @@ def option_sneak():
     notices that you don't have your ticket clipped to your jacket.
     What do you do next?""")
     time.sleep(8)
-    print("""1. Obey the rules and respectfully step out of line
+    print("""
+    1. Obey the rules and respectfully step out of line
     2. Throw up a peace sign and hop on the lift anyway
     3. Get trampled by the lift attendant""")
     if choice in answer_1:
@@ -107,7 +110,8 @@ def option_search2():
         ice_pick = 0
     print ("\nWhat do you do next?")
     time.sleep(1)
-    print ("""1. Hide behind a snowbank like the coward you are
+    print ("""
+    1. Hide behind a snowbank like the coward you are
     2. Fight the Yeti
     3. Run""")
     choice = input(">>> ")
@@ -142,7 +146,8 @@ def option_run():
     You're unable to run in your ski boots, and the Yeti is
     gaining speed. You decide to...""")
     time.sleep(1)
-    print ("""1. Hide behind boulder
+    print ("""
+    1. Hide behind boulder
     2. Fight the Yeti
     3. Run towards the lodge and hope you make it there safe""")
     choice = input(">>> ")
