@@ -85,6 +85,7 @@ def option_sneak():
     1. Obey the rules and respectfully step out of line
     2. Throw up a peace sign and hop on the lift anyway
     3. Get trampled by the lift attendant""")
+    choice = input(">>> ")
     if choice in answer_1:
         print("Following the rules will get you no where.\n\nYou died!")
     elif choice in answer_2:
@@ -127,7 +128,17 @@ def option_search2():
             would be his dinner. He crept closer and closer, and your palms
             became sweaty in your gloves. The Yeti tried to reach out to grab
             your ice pick, but you were too quick for him! You stabbed his furry
-            chest as he stumbled into the snow.\n\nYou survived!""")
+            chest as he stumbled into the snow.\n\nYou survived!\n\n Would you
+            like to...
+            1. Ski over to the lodge
+            2. Try to sneak onto the high speed lift
+            3. Take a nap in the snow""")
+            if choice in answer_1:
+                option_lodge()
+            elif choice in answer_2:
+                option_sneak()
+            else:
+                print("""Sleeping in the snow is a dangerous choice! \n\nYOU DIED""")
         else:
             #If the player doesn't have the pick
             print ("""\nNot picking up the ice pick was a terrible move.
