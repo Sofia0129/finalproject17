@@ -40,7 +40,7 @@ def check():
         print("""
         1. Try to slide past the lift attendant
         2. Sit down in the snow and cry
-        3. Ski across to Cobra's Persuit, the trail that you just came from""")
+        3. Ski across to Cobra's Pursuit, the trail that you just came from""")
         #first choice
         choice = input(">>> ")
         if choice in answer_1:
@@ -67,13 +67,13 @@ def check():
 #to search on previous trail
 def option_search1():
     time.sleep(5)
-    print ("""\nYou ski slightly uphill over to Cobra's Persuit.  You ski down
+    print ("""\nYou ski slightly uphill over to Cobra's Pursuit.  You ski down
     the trail, but you can't seem to find your ticket.  Would you
     like to...""")
     time.sleep(4)
     print ("""
     1. Give up and resort to sneaking past the lift attendant
-    2. Do another sweep over Cobra's Persuit
+    2. Do another sweep over Cobra's Pursuit
     3. Search the Bunny Hill, where you warmed up this morning""")
     choice = input(">>> ")
     #first choice
