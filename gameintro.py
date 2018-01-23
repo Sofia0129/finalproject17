@@ -27,7 +27,7 @@ def intro():
     #delay to give time to read
     time.sleep(7)
     print("...checking for ticket...")
-    time.sleep(6)
+    time.sleep(3)
 
 #check for lift ticket
 def check():
@@ -285,6 +285,5 @@ def option_top():
 
 intro()
 check()
-
 
 
