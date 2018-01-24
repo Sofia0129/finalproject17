@@ -15,14 +15,22 @@ ticket = 0
 #makes sure desired result is received
 required = ("\nOnly use 1, 2, or 3 to answer most questions \n")
 
+#class for name
+class Player(object):
+    def __init__(self, name):
+        self.name = name
+
+print("Hello! What is your name?")
+player = Player(input("create a new name for your character"))
+print(player.name)
 
 #start with introduction section of game
 def intro():
     #will set the scene
-    print ("""You're on Frozen Python Mountain! After a gnarley morning
-    on the slopes, you find yourself about half way up the mountain.
-    You've always wanted to take the high-speed lift to the top of the
-    mountain.  All you need is your lift ticket! Double check that you
+    print ("""Welcome Ski Mountain Madness! You're on Frozen Python Mountain!
+    After a gnarley morning on the slopes, you find yourself about half way up
+    the mountain. You've always wanted to take the high-speed lift to the top
+    of the mountain.  All you need is your lift ticket! Double check that you
     have it, and then we'll be ready to go!""")
     #delay to give time to read
     time.sleep(7)
