@@ -190,7 +190,8 @@ def option_search2():
                 option_sneak()
             else:
                 #taking a nap leads to player's death
-                print("""Sleeping in the snow is a dangerous choice! \n\nYOU DIED""")
+                print("""At these sub-zero temperatures, leeping in the snow is
+                a dangerous choice! \n\nYOU DIED""")
         else:
             #If the player doesn't have the pick
             #dies
@@ -245,7 +246,7 @@ def option_run():
 def option_lodge():
     print ("""\nWhile running, you notice a rusted
     ice pick in the snow. You try to pick it up while passing
-    it, but you miss. You decide to hide behindthe main ski
+    it, but you miss. You decide to hide behind the main ski
     lodge building, knowing that the Yeti is not far behind.
     You spot a LIFT TICKET in the snow near your foot.
     Do you pick it up? Y/N""")
